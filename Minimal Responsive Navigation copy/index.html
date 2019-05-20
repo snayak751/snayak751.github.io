@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script type="text/javascript">
+        var colors = ["#f8bbd0", "#e1bee7", "#d1c4e9", "#c5cae9", "#bbdefb", "#b2dfdb", "#ffccbc", "#ef9a9a", "#9fa8da", "#a5d6a7", "#78909c", "#a7a6ba"];
+        function myfunction() 
+        {
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+        
+        $(function(){
+         $("#textArea1").keypress(function (e) {
+            if (e.keyCode == 13) {
+                alert('You pressed enter!');
+            }
+         });
+        });
+    </script>
+<head>
+
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>NPT - Home</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="about.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body onload="myfunction()">
+
+    <style>    
+        nav ul li a
+        {
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+
+    <div id="index-banner" class="parallax-container">
+        
+        
+      <nav class="transparent z-depth-0" role="navigation">
+          <div class="nav-wrapper container" id="menu-container" >
+              <a id="logo-container" href="index.html" class="brand-logo white-text">HOME</a>
+              <ul class="right hide-on-med-and-down" id="menu-items">
+                  <li><a class="" href="index.html" style="color: white">HOME</a></li>
+                  <li><a href="about.html"style="color: white">ABOUT</a></li>
+                  <li><a href="contact.html"style="color: white">CONTACT</a></li>
+              </ul>
+              <ul id="nav-mobile" class="sidenav">
+                  <li><a href="#">Navbar Link</a></li>
+              </ul>
+              <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          </div>
+      </nav>
+        
+        
+      <div class="section no-pad-bot">
+          <div class="container">
+              <br><br>
+          
+              <h1 class="header center teal-text text-lighten-2">  </h1>
+              <div class="row center" id="two-words" >
+                  <h1 class="header col s12 light" style="font-family: avenir next; letter-spacing: 0.1vw; font-size: 3vw; color: #455a64; line-height: 5vw">Education. <br> Everywhere.</h1>
+                  <!--<h1 class="header col s12 light" style="font-family: avenir next; letter-spacing: 0.1vw; font-size: 3vw; color: #455a64">Everywhere.</h1>-->
+              </div>
+              <div class="row center">
+                  <a href="http://materializecss.com/getting-started.html" id="s" class="btn-large waves-effect waves-light yellow lighten-4" style="font-family: avenir next; font-size: 0.9vw; color: #455a64">Get Started</a>
+
+                    <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <textarea id="textarea1" class="materialize-textarea"  placeholder="(enter your name)"></textarea>
+                              <label for="textarea1" style="font-family: avenir next; font-size: 2vw; color: #455a64;">Welcome, </label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+              </div>
+
+                <br><br>
+
+          </div>
+      </div>
+      <!--<div class="parallax"><img src="naturebackground.gif" alt="Unsplashed background img --></div>
+    </div>
+
+    
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="materialize.js"></script>
+    <script src="init.js"></script>
+    
+    </body>
+    <footer class="page-footer">
+        <div class="container" style=" font-family: avenir next;">
+            <div class="row">
+                <!--<h5 class="white-text">Footer Content</h5>-->
+                <p class="grey-text text-lighten-4" id="copyright";>© 2019 Copyright NPT</p>
+                <div class="col l4 offset-l2 s12">
+                    <!--<h5 class="white-text">Links</h5>
+                    <ul>
+                      <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>-->
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <!--<div class="container">© 2019 Copyright NPT Tutoring
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>-->
+        </div>
+    </footer>
+</html>
+
